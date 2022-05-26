@@ -35,8 +35,8 @@ const Navbar = () => {
                 <div className="-fluid px-5 ">
                     {/* Brand logo */}
                     <div className='flex justify-center align-center'>
-                    <Link className="navbar-brand me-0 pb-2" to="/"><img src={brandLogo} alt="" /></Link>
-                    <Link to="/"><p className='logo fw-bolder text-3xl mt-2  ms-0'>Car Doctor</p></Link>
+                    <Link className="navbar-brand me-0 mb-3" to="/"><img src={brandLogo} alt="" /></Link>
+                    <Link to="/"><p className='logo fw-bolder text-3xl mt-2.5  ms-0'>Car Doctor</p></Link>
                     
                     </div>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,7 @@ const Navbar = () => {
                     </button>
                     {/* nav links */}
                     <div className="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0 pb-2.5">
                             <li className="nav-item">
                                 <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
                             </li>

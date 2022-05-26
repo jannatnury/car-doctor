@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import brandLogo from '../../assets/images/logo.png';
-import googleLogo from '../../assets/images/google-logo.png';
+import brandLogo from '../../assets/icons/iconc.ico';
+
 
 const Footer = () => {
     return (
@@ -37,11 +37,14 @@ const Footer = () => {
                     <div className="mt-4 col-lg-4 col-sm-12 order-lg-1 order-xs-3">
                         <div className="pb-2">
                             <Link className="navbar-brand d-flex align-items-center" to="/home">
-                                <img className='d-block' src={brandLogo} alt="brand logo" />
-                
+                                <div className='flex align-center'>
+                                    <img className='d-block' src={brandLogo} alt="brand logo" />
+                                    <p className='text-white mt-2'>Car Doctor</p>
+                                </div>
+
                             </Link>
                         </div>
-                        <small className="text-secondary d-block">We are a Bangladeshi multinational <span className="text-white pe-1">brush making</span> company, founded on 2000 , in Dhaka, Bangldesh.</small>
+                        <small className="text-secondary d-block">We are a Bangladeshi multinational <span className="text-white pe-1">car parts maker</span> company, founded on 2000 , in Dhaka, Bangldesh.</small>
                         <div className="mt-4 mb-2">
                             <Link to="/social"><i className="ico text-white pe-3 fab fa-facebook-f"></i></Link>
                             <Link to="/social"><i className="ico text-white pe-3 fab fa-twitter"></i></Link>
