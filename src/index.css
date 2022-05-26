@@ -4,6 +4,15 @@
 .logo{
   font-family: 'Ubuntu', sans-serif;
   color: rgb(223, 17, 17);
+  font-size: 30px;
+  margin-left: 0;
+}
+.nav-link:hover{
+ font-weight: bold;
+}
+/* Cards Styles */
+#card01{
+  background-color: rgb(91, 86, 86);
 }
 .google-logo{
   width: 150px;
