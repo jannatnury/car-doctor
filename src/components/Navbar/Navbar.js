@@ -1,7 +1,7 @@
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import brandLogo from '../../assets/images/logo.png';
+import brandLogo from '../../assets/icons/iconc.ico';
 import { auth } from '../../firebase.init';
 
 const Navbar = () => {
@@ -31,10 +31,14 @@ const Navbar = () => {
     return (
         <div>
             {/* navbar */}
-            <nav className=" navbar navbar-expand-lg navbar-dark pb-2 mb-4 bg-dark">
+            <nav className=" navbar navbar-expand-lg shadow-sm py-3 navbar-light pb-2 mb-4 ">
                 <div className="-fluid px-5 ">
                     {/* Brand logo */}
-                    <Link className="navbar-brand " to="/"><img src={brandLogo} alt="" /></Link>
+                    <div className='flex justify-center align-center'>
+                    <Link className="navbar-brand me-0 pb-2" to="/"><img src={brandLogo} alt="" /></Link>
+                    <Link to="/"><p className='logo fw-bolder text-3xl mt-2  ms-0'>Car Doctor</p></Link>
+                    
+                    </div>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>

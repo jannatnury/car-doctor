@@ -5,6 +5,11 @@
 *{
   font-family: 'Raleway', sans-serif;
 }
+.logo{
+  font-family: 'Ubuntu', sans-serif;
+  color: rgb(223, 17, 17);
+}
+
 .google-logo{
   width: 150px;
   height: auto;

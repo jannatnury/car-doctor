@@ -1,0 +1,92 @@
+[
+    {
+        
+        "name": "Product one",
+        "img": "https://i.ibb.co/z2fc5nw/parts.webp",
+        "supplier": "Jhon Milton",
+        "price": "$16",
+        "quantity": 357,
+        "details": "lore 20"
+    },
+    
+    {
+        
+        "name": "Product two",
+        "img": "https://i.ibb.co/z2fc5nw/parts.webp",
+        "supplier": "Jhon Milton",
+        "price": "$16",
+        "quantity": 357,
+        "details": "lore 20"
+    },
+    
+    {
+        
+        "name": "Product three",
+        "img": "https://i.ibb.co/z2fc5nw/parts.webp",
+        "supplier": "Jhon Milton",
+        "price": "$16",
+        "quantity": 357,
+        "details": "lore 20"
+    },
+    
+    {
+        
+        "name": "Product four",
+        "img": "https://i.ibb.co/z2fc5nw/parts.webp",
+        "supplier": "Jhon Milton",
+        "price": "$16",
+        "quantity": 357,
+        "details": "lore 20"
+    },
+    
+    {
+        
+        "name": "Product five",
+        "img": "https://i.ibb.co/z2fc5nw/parts.webp",
+        "supplier": "Jhon Milton",
+        "price": "$16",
+        "quantity": 357,
+        "details": "lore 20"
+    },
+    
+    {
+        
+        "name": "Product six",
+        "img": "https://i.ibb.co/z2fc5nw/parts.webp",
+        "supplier": "Jhon Milton",
+        "price": "$16",
+        "quantity": 357,
+        "details": "lore 20"
+    },
+    
+    {
+        
+        "name": "Product seven",
+        "img": "https://i.ibb.co/z2fc5nw/parts.webp",
+        "supplier": "Jhon Milton",
+        "price": "$16",
+        "quantity": 357,
+        "details": "lore 20"
+    },
+    
+    {
+        
+        "name": "Product eight",
+        "img": "https://i.ibb.co/z2fc5nw/parts.webp",
+        "supplier": "Jhon Milton",
+        "price": "$16",
+        "quantity": 357,
+        "details": "lore 20"
+    },
+    
+    {
+        
+        "name": "Product nine",
+        "img": "https://i.ibb.co/z2fc5nw/parts.webp",
+        "supplier": "Jhon Milton",
+        "price": "$16",
+        "quantity": 357,
+        "details": "lore 20"
+    }
+    
+]
