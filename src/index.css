@@ -12,7 +12,13 @@
 }
 /* Cards Styles */
 #card01{
-  background-color: rgb(91, 86, 86);
+  background-color: #a2fbd9;
+}
+#card02{
+  background-color: #9ea4b5;
+}
+#card03{
+  background-color: #a2fbd9;
 }
 .google-logo{
   width: 150px;

@@ -6,22 +6,32 @@ import icon3 from '../../assets/icons/phone.svg';
 const Cards = () => {
     return (
         <div className='row container m-auto'>
-            <div className="col-12 col-lg-4">
+            <div className="col-12 col-lg-4 mb-3">
                 <div id='card01' className='d-flex align-items-center justify-content-center p-3'>
                     <img src={icon} alt="" />
-                    <p className='ms-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nostrum ducimus natus velit commodi! Suscipit, iusto expedita ipsam sunt quisquam minus adipisci vitae officia ab tempore sint tempora dicta soluta?</p>
+                    <div className='ms-3'>
+                        <h3>Opening Hours</h3>
+                        <p>We are open from 9 am to 10 pm. Weekly off day is Friday.</p>
+                    </div>
                 </div>
             </div>
-            <div id='card02' className="col-12 col-lg-4">
-                <div className='d-flex align-items-center justify-content-center bg-secondary p-3'>
+            <div className="col-12 col-lg-4 mb-3">
+                <div id='card02' className='d-flex align-items-center justify-content-center p-3'>
                     <img src={icon2} alt="" />
-                    <p className='ms-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolor consequuntur minus eum nesciunt sint sapiente eius perferendis unde tenetur expedita molestias numquam aspernatur aliquam, commodi cumque qui itaque in.</p>
+                    <div className='ms-3'>
+                        <h3>Our Location</h3>
+                        <p>We have five showrooms on different area.check links below and visit us.</p>
+                    </div>
                 </div>
             </div>
-            <div id='card03' className="col-12 col-lg-4">
-                <div className='d-flex align-items-center justify-content-center bg-secondary p-3'>
+            <div className="col-12 col-lg-4 mb-3">
+                <div id='card03' className='d-flex align-items-center justify-content-center  p-3'>
                     <img src={icon3} alt="" />
-                    <p className='ms-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit at suscipit est alias accusantium consectetur rem qui, provident animi sit sequi eos modi id odio fuga aperiam, voluptate ut quisquam.</p>
+                    <div className='ms-3 pb-2'>
+                        <h3>Contruct Us</h3>
+                        <p>+88023466788</p>
+                        <p>+88043466788</p>
+                    </div>
                 </div>
             </div>
 
