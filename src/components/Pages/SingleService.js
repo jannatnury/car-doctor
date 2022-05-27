@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const SingleService = ({product}) => {
+    console.log(product);
     const {name,img,price,supplier,details,quantity}=product;
     return (
         <div className='col-lg-4 col-sm-12 mt-3 h-100'>

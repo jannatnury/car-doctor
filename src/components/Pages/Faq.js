@@ -1,10 +1,14 @@
 import React from 'react';
-import picture from '../../assets/images/faq.svg';
+import picture from '../../assets/images/faq-svg.svg';
 
 const Faq = () => {
     return (
-        <div className='row conatiner m-auto d-flex align-items-center justify-content-center'>
-            <div className="col-12 col-lg-6">
+        <div id='section-faq' className='row container m-auto d-flex align-items-center justify-content-evenly my-5 shadow'>
+            <div className="col-12 col-lg-6 order-lg-last order-sm-first faq-image me-sm-3 mb-3 me-2">
+                <img src={picture} alt="image" />
+            </div>
+
+            <div className="col-12 col-lg-6 order-lg-first order-sm-last">
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
@@ -44,10 +48,6 @@ const Faq = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-12 col-lg-6 faq-image">
-                <img src={picture} alt="image" />
-            </div>
-
         </div>
     );
 };

@@ -8,6 +8,7 @@ import PageError from './components/PageError/PageError';
 import Signin from './components/Pages/Signin';
 import SignUp from './components/Pages/SignUp';
 import Blogs from './components/Pages/Blogs';
+import Services from './components/Pages/Services';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/sign-in" element={<Signin></Signin>}></Route>
         <Route path="/sign-up" element={<SignUp></SignUp>}></Route>
+        <Route path="/products" element={<Services></Services>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="*" element={<PageError></PageError>}></Route>
       </Routes>

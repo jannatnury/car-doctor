@@ -1,92 +1,74 @@
 [
     {
-        
-        "name": "Product one",
-        "img": "https://thumbs.dreamstime.com/b/spare-parts-spark-plugs-white-background-car-motorcycle-spare-parts-spark-plugs-white-background-car-134084701.jpg",
+        "name": "Wheel",
+        "img": "https://i.ibb.co/SrWg1hC/wheels.jpg",
         "supplier": "Jhon Milton",
         "price": "$16",
         "quantity": 357,
         "details": "lore 20"
     },
-    
     {
-        
-        "name": "Product two",
-        "img": "https://thumbs.dreamstime.com/b/spare-parts-spark-plugs-white-background-car-motorcycle-spare-parts-spark-plugs-white-background-car-134084701.jpg",
+        "name": "License Plate",
+        "img": "https://i.ibb.co/6Jjb0Ck/license-plate.jpg",
         "supplier": "Jhon Milton",
         "price": "$16",
         "quantity": 357,
         "details": "lore 20"
     },
-    
     {
-        
-        "name": "Product three",
-        "img": "https://thumbs.dreamstime.com/b/spare-parts-spark-plugs-white-background-car-motorcycle-spare-parts-spark-plugs-white-background-car-134084701.jpg",
+        "name": "Turn Signal",
+        "img": "https://i.ibb.co/Hxg6BLB/turn-signal.jpg",
         "supplier": "Jhon Milton",
         "price": "$16",
         "quantity": 357,
         "details": "lore 20"
     },
-    
     {
-        
-        "name": "Product four",
-        "img": "https://thumbs.dreamstime.com/b/spare-parts-spark-plugs-white-background-car-motorcycle-spare-parts-spark-plugs-white-background-car-134084701.jpg",
+        "name": "Grilles",
+        "img": "https://i.ibb.co/VThxZZL/grilles.png",
         "supplier": "Jhon Milton",
         "price": "$16",
         "quantity": 357,
         "details": "lore 20"
     },
-    
     {
-        
-        "name": "Product five",
-        "img": "https://thumbs.dreamstime.com/b/spare-parts-spark-plugs-white-background-car-motorcycle-spare-parts-spark-plugs-white-background-car-134084701.jpg",
+        "name": "Fender",
+        "img": "https://i.ibb.co/qWM3r6m/fenders.jpg",
         "supplier": "Jhon Milton",
         "price": "$16",
         "quantity": 357,
         "details": "lore 20"
     },
-    
     {
-        
-        "name": "Product six",
-        "img": "https://thumbs.dreamstime.com/b/spare-parts-spark-plugs-white-background-car-motorcycle-spare-parts-spark-plugs-white-background-car-134084701.jpg",
+        "name": "Tail Light",
+        "img": "https://i.ibb.co/RQ9043d/light-tail.jpg",
         "supplier": "Jhon Milton",
         "price": "$16",
         "quantity": 357,
         "details": "lore 20"
     },
-    
     {
-        
-        "name": "Product seven",
-        "img": "https://thumbs.dreamstime.com/b/spare-parts-spark-plugs-white-background-car-motorcycle-spare-parts-spark-plugs-white-background-car-134084701.jpg",
+        "name": "A/C Condencer",
+        "img": "https://i.ibb.co/cgp7dSK/car-ac-condenser.jpg",
         "supplier": "Jhon Milton",
         "price": "$16",
         "quantity": 357,
         "details": "lore 20"
     },
-    
     {
-        
-        "name": "Product eight",
-        "img": "https://thumbs.dreamstime.com/b/spare-parts-spark-plugs-white-background-car-motorcycle-spare-parts-spark-plugs-white-background-car-134084701.jpg",
+        "name": "Hood",
+        "img": "https://i.ibb.co/F3v9GDF/hood.jpg",
         "supplier": "Jhon Milton",
         "price": "$16",
         "quantity": 357,
         "details": "lore 20"
     },
-    
     {
-        
-        "name": "Product nine",
-        "img": "https://thumbs.dreamstime.com/b/spare-parts-spark-plugs-white-background-car-motorcycle-spare-parts-spark-plugs-white-background-car-134084701.jpg",
+        "name": "Radiator Support",
+        "img": "https://i.ibb.co/6JvBsPp/radiator-support.jpg",
         "supplier": "Jhon Milton",
         "price": "$16",
         "quantity": 357,
         "details": "lore 20"
     }
-    
 ]

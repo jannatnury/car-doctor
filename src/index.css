@@ -35,13 +35,27 @@
   color:rgb(147, 107, 5)
 }
 /* Faq Styles */
+#section-faq{
+  padding: 20px;
+  border-radius: 15px;
+}
 .faq-image{
   width: 300px;
   height: auto;
 }
+.accordion-item{
+  background-color: rgb(232, 255, 247);
+}
+/* Blogs Styles */
+.blogs-container h3{
+  color-scheme: rgb(147, 14, 14);
+}
 .google-logo{
   width: 150px;
   height: auto;
+}
+.title{
+  color: rgb(73, 8, 177);
 }
 /* footer styles */
 .footer-hover:hover {
