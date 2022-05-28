@@ -121,10 +121,10 @@ const SignUp = () => {
                     <hr className="col-5" />
                 </div>
                 <div className=''>
-                    <button onClick={handleGoogle} className='flex align-center justify-center bg-black text-white w-100'
+                    <button onClick={handleGoogle} className='px-5 mb-3 btn btn-outline-dark d-flex justify-content-center align-items-center w-100'
                     >
-                        <img className="d-block pt-2" src={googleIcon} alt='icon' />
-                        <p className="mt-2 fs-5 ms-3 pb-2"> Google Sign In </p>
+                        <img className="d-block" src={googleIcon} alt='icon' />
+                        <p className="mt-3 fs-5 ms-3"> Google Sign In </p>
                     </button>
                 </div>
             </div>

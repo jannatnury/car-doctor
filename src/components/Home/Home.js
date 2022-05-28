@@ -14,7 +14,7 @@ const Home = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('data.json')
+        fetch('https://agile-wildwood-78476.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setProducts(data));
     }, []);

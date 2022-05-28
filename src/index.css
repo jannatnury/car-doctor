@@ -106,8 +106,8 @@ a {
 }
 
 /* Blogs Styles */
-.blogs-container h3 {
-  color-scheme: rgb(147, 14, 14);
+.title {
+  color: darkblue;
 }
 
 /* Summary Styles */
@@ -123,10 +123,6 @@ a {
 .google-logo {
   width: 150px;
   height: auto;
-}
-
-.title {
-  color: rgb(73, 8, 177);
 }
 
 /* footer styles */

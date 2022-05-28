@@ -102,7 +102,7 @@ const Signin = () => {
                     <div>
                         <p onClick={resetPassword} className="btn bg-white border-0 ps-0 text-primary"><span className='text-red-400'>Forgot Password ? </span></p>
                     </div>
-                    <button type='submit' className='btn bg-dark hover:text-white d-block w-100 mt-2'>
+                    <button type='submit' className='btn btn-dark d-block w-100'>
                         Sign In
                     </button>
                 </form>
@@ -116,10 +116,10 @@ const Signin = () => {
                     <hr className="col-5" />
                 </div>
                 <div className=''>
-                    <button onClick={handleGoogle} className='flex align-center justify-center bg-black text-white w-100'
+                    <button onClick={handleGoogle} className='px-5 btn btn-outline-dark d-flex justify-content-center align-items-center w-100'
                     >
-                        <img className="d-block pt-2" src={googleIcon} alt='icon' />
-                        <p className="mt-2 fs-5 ms-3 pb-2"> Google Sign In </p>
+                        <img className="d-block" src={googleIcon} alt='icon' />
+                        <p className="mt-3 fs-5 ms-3"> Google Sign In </p>
                     </button>
                 </div>
             </div>
