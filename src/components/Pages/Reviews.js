@@ -5,7 +5,7 @@ import image3 from '../../assets/images/boy02.png';
 
 const Reviews = () => {
     return (
-        <div className='row container m-auto'>
+        <div className='row container m-auto mt-4'>
             <h3 className='text-center my-3'>Happy Clients Review</h3>
             <div className="col-12 col-lg-4 mb-3">
                 <div className='review d-flex align-items-center justify-content-center p-3 pb-4'>

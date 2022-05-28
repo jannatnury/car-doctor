@@ -1,62 +1,134 @@
-*{
+* {
   font-family: 'Raleway', sans-serif;
 }
-.logo{
+
+a {
+  text-decoration: none;
+}
+/* Hero Image Styles */
+#hero-img{
+  width: 550px;
+  height: auto;
+}
+#hero-img:hover{
+  transform: scale(1.08);
+  transition: 2s;
+}
+
+/* All Button Style */
+.login-button {
+  border: 2px solid blue;
+  border-radius: 20px;
+}
+
+.button {
+  background-color: rgb(199, 225, 246);
+  border: 2px solid blue;
+  padding: 5px;
+}
+
+.button:hover {
+  color: blue;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid blue;
+  border-radius: 20px;
+  transition: 0.5 s;
+}
+
+.logo {
   font-family: 'Ubuntu', sans-serif;
   color: rgb(223, 17, 17);
   font-size: 30px;
   margin-left: 0;
 }
-.nav-link:hover{
- font-weight: bold;
+
+.nav-link:hover {
+  font-weight: bold;
 }
+
 /* Cards Styles */
-#card01{
+.card-container:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.card-body {
+  background: rgb(213, 245, 255);
+}
+
+#card01 {
   background-color: #a2fbd9;
 }
-#card02{
+
+#card02 {
   background-color: #9ea4b5;
 }
-#card03{
+
+#card03 {
   background-color: #a2fbd9;
 }
-/* Review styles */
 
-.review img{
+/* Review styles */
+.review img {
   border: 2px solid goldenrod;
-   border-radius: 50%;
+  border-radius: 50%;
 }
-.review{
+
+.review {
   background-color: #eaeaf8;
   border-radius: 20px;
   padding: 15px;
 }
-.review h4{
-  color:rgb(147, 107, 5)
+
+.review h4 {
+  color: rgb(147, 107, 5)
 }
+
+.review:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
 /* Faq Styles */
-#section-faq{
+#section-faq {
   padding: 20px;
   border-radius: 15px;
 }
-.faq-image{
+
+.faq-image {
   width: 300px;
   height: auto;
 }
-.accordion-item{
+
+.accordion-item {
   background-color: rgb(232, 255, 247);
 }
+
 /* Blogs Styles */
-.blogs-container h3{
+.blogs-container h3 {
   color-scheme: rgb(147, 14, 14);
 }
-.google-logo{
+
+/* Summary Styles */
+#summary {
+  border-radius: 20px;
+}
+
+#summary:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.google-logo {
   width: 150px;
   height: auto;
 }
-.title{
+
+.title {
   color: rgb(73, 8, 177);
 }
+
 /* footer styles */
 .footer-hover:hover {
   color: white !important;

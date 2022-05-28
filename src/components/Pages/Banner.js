@@ -5,7 +5,7 @@ const Banner = () => {
     return (
         <div className="row container m-auto my-5 p-3 d-flex align-items-center justify-content-between">
             <div className="col-sm-12 col-lg-6 order-lg-last d-flex justify-content-center ">
-                <img src={heroImg} className="img-fluid mb-2" />
+                <img id='hero-img' src={heroImg} className="img-fluid mb-2" />
             </div>
             <div className="col-sm-12 col-lg-6 order-lg-first p-4">
                 <h1>Welcome to <span className='logo fw-bolder'>CAR DOCTOR</span></h1>

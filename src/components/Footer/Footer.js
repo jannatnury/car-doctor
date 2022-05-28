@@ -37,7 +37,7 @@ const Footer = () => {
                     <div className="mt-4 col-lg-4 col-sm-12 order-lg-1 order-xs-3">
                         <div className="pb-2">
                             <Link className="navbar-brand d-flex align-items-center" to="/home">
-                                <div className='flex align-center'>
+                                <div className='d-flex align-items-center'>
                                     <img className='d-block' src={brandLogo} alt="brand logo" />
                                     <p className='text-white mt-2'>Car Doctor</p>
                                 </div>

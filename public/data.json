@@ -1,74 +1,83 @@
 [
     {
         "name": "Wheel",
+        "model":"NKS123WS",
         "img": "https://i.ibb.co/SrWg1hC/wheels.jpg",
         "supplier": "Jhon Milton",
         "price": "$16",
-        "quantity": 357,
-        "details": "lore 20"
+        "quantity": 215357,
+        "details": "We make 50 models weels in our factory. "
     },
     {
         "name": "License Plate",
+        "model":"NKS543WS",
         "img": "https://i.ibb.co/6Jjb0Ck/license-plate.jpg",
-        "supplier": "Jhon Milton",
+        "supplier": "Jannat Nury",
         "price": "$16",
-        "quantity": 357,
-        "details": "lore 20"
+        "quantity": 345357,
+        "details": "This our best selling license plate."
     },
     {
         "name": "Turn Signal",
+        "model":"KKS123WS",
         "img": "https://i.ibb.co/Hxg6BLB/turn-signal.jpg",
-        "supplier": "Jhon Milton",
+        "supplier": "Ahil Anan",
         "price": "$16",
-        "quantity": 357,
-        "details": "lore 20"
+        "quantity": 422357,
+        "details": "This is the clasic style turn signal."
     },
     {
         "name": "Grilles",
+        "model":"MNS123WS",
         "img": "https://i.ibb.co/VThxZZL/grilles.png",
-        "supplier": "Jhon Milton",
+        "supplier": "Orthi Sen",
         "price": "$16",
-        "quantity": 357,
-        "details": "lore 20"
+        "quantity": 334357,
+        "details": "This grilles it usable over 10 models car"
     },
     {
         "name": "Fender",
+        "model":"AZS123WS",
         "img": "https://i.ibb.co/qWM3r6m/fenders.jpg",
-        "supplier": "Jhon Milton",
+        "supplier": "Ria Ray",
         "price": "$16",
-        "quantity": 357,
-        "details": "lore 20"
+        "quantity": 123357,
+        "details": "This ic common fender for all cars."
     },
     {
         "name": "Tail Light",
+        "model":"FTS123WS",
         "img": "https://i.ibb.co/RQ9043d/light-tail.jpg",
-        "supplier": "Jhon Milton",
+        "supplier": "Markiee",
         "price": "$16",
-        "quantity": 357,
-        "details": "lore 20"
+        "quantity": 837357,
+        "details": "This is classic styles tail light."
     },
     {
         "name": "A/C Condencer",
+        "model":"HT123WS",
         "img": "https://i.ibb.co/cgp7dSK/car-ac-condenser.jpg",
-        "supplier": "Jhon Milton",
+        "supplier": "Anna Maria",
         "price": "$16",
-        "quantity": 357,
-        "details": "lore 20"
+        "quantity": 334357,
+        "details": "This condencer is best for classic cars."
     },
     {
         "name": "Hood",
+        "model":"DW123WS",
         "img": "https://i.ibb.co/F3v9GDF/hood.jpg",
         "supplier": "Jhon Milton",
         "price": "$16",
-        "quantity": 357,
-        "details": "lore 20"
+        "quantity": 233357,
+        "details": "We are making 100+ styes hoods."
     },
     {
         "name": "Radiator Support",
+        "model":"UKS123WS",
         "img": "https://i.ibb.co/6JvBsPp/radiator-support.jpg",
-        "supplier": "Jhon Milton",
+        "supplier": "Nury Jannat",
         "price": "$16",
-        "quantity": 357,
-        "details": "lore 20"
+        "quantity": 54357,
+        "details": "This is our one of the best products."
     }
 ]
