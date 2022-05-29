@@ -4,13 +4,27 @@ const EditProfile = () => {
     return (
         <div className='container p-5 pt-0'>
             <div className='col-md-6 mx-auto p-5 shadow rounded-10 bg-light'>
-                <h2 className="text-center">Add Your Reviwe</h2>
+                <h2 className="text-center">Edit Your Profile</h2>
                 <form>
                     <div className='mb-2 mt-2'>
-                        <label htmlFor='name'>Name</label>
+                        <label htmlFor='name'>Full Name</label>
                         <div>
                             <input className="form-control" type='text' name='name'
                                 id='name' placeholder='Jannat Nury' required />
+                        </div>
+                    </div>
+                    <div className='mb-2 mt-2'>
+                        <label htmlFor='email'>Email Address</label>
+                        <div>
+                            <input className="form-control" type='text' name='email'
+                                id='email' placeholder='jannatnury253@gmail.com' required />
+                        </div>
+                    </div>
+                    <div className='mb-2 mt-2'>
+                        <label htmlFor='number'>Phone Number</label>
+                        <div>
+                            <input className="form-control" type='text' name='number'
+                                id='number' placeholder='+88023456789' required />
                         </div>
                     </div>
                     <div className='mb-2 mt-2'>
@@ -21,19 +35,19 @@ const EditProfile = () => {
                         </div>
                     </div>
                     <div className='mb-2 mt-2'>
-                        <label htmlFor='review'>Review</label>
+                        <label htmlFor='education'>Education</label>
                         <div>
-                            <input className="form-control" type='text' name='review'
-                                id='review' placeholder='Write a review' required />
+                            <input className="form-control" type='text' name='education'
+                                id='education' placeholder='Add educational history' required />
                         </div>
                     </div>
                     <div className='mb-2'>
-                        <label htmlFor='star'>Stars</label>
+                        <label htmlFor='link'>Github Link</label>
                         <div>
                             <input className="form-control"
                                 type='star'
-                                name='star'
-                                id='star' placeholder='Give star ratings' required
+                                name='link'
+                                id='link' placeholder='Add github profile link' required
                             />
                         </div>
                     </div>
