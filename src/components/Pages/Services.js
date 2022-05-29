@@ -18,7 +18,7 @@ const Services = () => {
             <div className='row container m-auto'>
                 {
                     products.map(product=> 
-                        <SingleService
+                        <SingleService key={product._id}
                         product={product}></SingleService>
                     )
                 }

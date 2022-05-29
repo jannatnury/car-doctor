@@ -33,8 +33,8 @@ const Navbar = () => {
             <div className="container-fluid">
                 {/* brand logo */}
                 <div className='d-flex align-items-center justify-content-center'>
-                <Link className="navbar-brand me-0" to="/home"><img src={brandLogo} alt="" /></Link>
-                <p className='fw-bold logo mt-2'>Car Doctor</p>
+                    <Link className="navbar-brand me-0" to="/home"><img src={brandLogo} alt="" /></Link>
+                    <p className='fw-bold logo mt-2'>Car Doctor</p>
                 </div>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -42,6 +42,13 @@ const Navbar = () => {
                 {/* navbar items */}
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li className="nav-item me-4 btn p-0">
+                            <span className="nav-link text-white">
+                                {
+                                    user?.email && (<span>{user?.displayName?.slice(0, user?.displayName?.indexOf(" "))},</span>)
+                                }
+                            </span>
+                        </li>
                         <li className="nav-item">
                             <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
                         </li>
@@ -49,14 +56,18 @@ const Navbar = () => {
                             <Link className="nav-link" to="/products">Products</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/inventory">Portfolio</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/dashboard">Dashboard</Link>
+                            <Link className="nav-link" to="/portfolio">Portfolio</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/blogs">Blogs</Link>
                         </li>
+                        {
+                            user?.email &&
+                            <li className="nav-item me-2">
+                                <Link className="nav-link text-main" to="/dashboard">Dashboard</Link>
+                            </li>
+                        }
+                        <li className="me-5"></li>
 
                         {/* signIn/out on user login */}
                         {

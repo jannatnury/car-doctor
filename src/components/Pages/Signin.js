@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import {  useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
+import { useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 import googleIcon from '../../assets/icons/google.svg';
@@ -31,6 +31,8 @@ const Signin = () => {
             setUserInfo({ ...userInfo, email: "" })
         }
     }
+   
+
     const passwordChange = (event) => {
 
         setUserInfo({ ...userInfo, password: event.target.value });
@@ -47,7 +49,7 @@ const Signin = () => {
     const handleGoogle = () => {
         signInWithGoogle();
     }
-// toast on password reset
+    // toast on password reset
     const resetPassword = () => {
         if (userInfo.email != "") {
             const resolveTime = new Promise(resolve => setTimeout(resolve, 2000));
@@ -86,7 +88,7 @@ const Signin = () => {
                         <label htmlFor='email'>Email</label>
                         <div className=''>
                             <input onBlur={handleEmailChange} className="form-control" type='text' name='email'
-                                id='email'  required />
+                                id='email' required />
                         </div>
                     </div>
                     <div className='mb-2'>
@@ -95,7 +97,7 @@ const Signin = () => {
                             <input onBlur={passwordChange} className="form-control"
                                 type='password'
                                 name='password'
-                                id='password'  required
+                                id='password' required
                             />
                         </div>
                     </div>
@@ -105,6 +107,7 @@ const Signin = () => {
                     <button type='submit' className='btn btn-dark d-block w-100'>
                         Sign In
                     </button>
+                
                 </form>
                 <p className='mt-2'>
                     Don't have an account?

@@ -44,7 +44,7 @@ const Footer = () => {
 
                             </Link>
                         </div>
-                        <small className="text-secondary d-block">We are a Bangladeshi multinational <span className="text-white pe-1">car parts maker</span> company, founded on 2000 , in Dhaka, Bangldesh.</small>
+                        <small className="text-secondary d-block"><span className="text-white pe-1">Car Doctor</span>is a Bangladeshi multinational company, founded on 2000 , in Dhaka, Bangldesh.</small>
                         <div className="mt-4 mb-2">
                             <Link to="/social"><i className="ico text-white pe-3 fab fa-facebook-f"></i></Link>
                             <Link to="/social"><i className="ico text-white pe-3 fab fa-twitter"></i></Link>
