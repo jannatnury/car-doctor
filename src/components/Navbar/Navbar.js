@@ -7,18 +7,23 @@ import { auth } from '../../firebase.init';
 const Navbar = () => {
 
     const [user, setUser] = useState({});
+
+    const [loading, setLoading] = useState(true);
+
     useEffect(() => {
-        onAuthStateChanged(auth, (user) => {
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
                 setUser(user);
-                // console.log(user);
-            }
-            else {
+            } else {
                 setUser({});
             }
-        });
-    }, []);
 
+
+            setLoading(false);
+        });
+        return () => unsubscribe;
+    }, []);
+    console.log(user);
     const handleSignOut = () => {
         signOut(auth).then(() => {
             // Sign-out successful.
@@ -67,7 +72,7 @@ const Navbar = () => {
                                 <Link className="nav-link text-main" to="/dashboard">Dashboard</Link>
                             </li>
                         }
-                        <li className="me-5"></li>
+                        <li></li>
 
                         {/* signIn/out on user login */}
                         {

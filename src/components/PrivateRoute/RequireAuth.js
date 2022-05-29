@@ -8,6 +8,7 @@ import { auth } from '../../firebase.init';
 const RequireAuth = ({children}) => {
     const [user, loading] =useAuthState(auth);
     const location = useLocation();
+    console.log(user);
 
 // if loading
 
@@ -24,7 +25,7 @@ const RequireAuth = ({children}) => {
     if (user) {
         return children;
     } else {
-        return <Navigate to="/" state={{ from: location }} replace />;
+        return <Navigate to="/sign-in" state={{ from: location }} replace />;
     }
 };
 

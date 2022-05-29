@@ -19,7 +19,7 @@ const SingleService = ({product}) => {
                         <p>Minimum Order : <span className='fw-bold'>50</span></p>
                         <p>Price: <span className='fw-bold'>{price}</span></p>
                         <button className='button' type="submit">
-                            <Link to="/">Order Now</Link>
+                            <Link to={`/parts/${product._id}`}>Order Now</Link>
                         </button>
                     </div>
                 </div>

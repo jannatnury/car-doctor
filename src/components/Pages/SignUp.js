@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import googleIcon from '../../assets/icons/google.svg';
 import { auth } from '../../firebase.init';
+import generateToken from '../../Hooks/useJwt';
 
 const SignUp = () => {
 
@@ -80,6 +81,7 @@ const SignUp = () => {
 
     useEffect(() => {
         if (user || googleUser) {
+            generateToken(googleUser?.user || user);
             navigate(from, { replace: true });
         }
     }, [user, googleUser]);

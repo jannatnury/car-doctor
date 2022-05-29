@@ -16,6 +16,11 @@ import MyOrder from './components/Dashboard/MyOrder';
 import MyReview from './components/Dashboard/MyReview';
 import Profile from './components/Dashboard/Profile';
 import EditProfile from './components/Dashboard/EditProfile';
+import AddProduct from './components/Dashboard/AddProduct';
+import ManageOrder from './components/Dashboard/ManageOrder';
+import ManageUsers from './components/Dashboard/ManageUsers';
+import DynamicParts from './components/Pages/DynamicParts';
+import ManageProduct from './components/Dashboard/ManageProduct';
 
 
 function App() {
@@ -29,7 +34,12 @@ function App() {
         <Route path="/sign-up" element={<SignUp></SignUp>}></Route>
         <Route path="/products" element={<Services></Services>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
-        <Route path="/portfolio" element={<Portfolio></Portfolio>}></Route>
+        <Route path="/parts/:id" element={
+          <RequireAuth>
+            <DynamicParts></DynamicParts>
+          </RequireAuth>
+        }>
+        </Route>
         <Route path="/dashboard" element={
           <RequireAuth>
             <Dashboard />
@@ -39,6 +49,11 @@ function App() {
           <Route path="profile" element={<EditProfile></EditProfile>}></Route>
           <Route path="review" element={<MyReview></MyReview>}></Route>
           <Route path="order" element={<MyOrder></MyOrder>}></Route>
+          {/* Admin Routes */}
+          <Route path="add-product" element={<AddProduct/>}></Route>
+          <Route path="edit-product" element={<ManageProduct/>}></Route>
+          <Route path="manage-order" element={<ManageOrder/>}></Route>
+          <Route path="manage-user" element={<ManageUsers/>}></Route>
         </Route>
         <Route path="*" element={<PageError></PageError>}></Route>
       </Routes>

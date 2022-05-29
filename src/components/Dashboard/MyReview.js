@@ -1,11 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 
 const MyReview = () => {
+
+    
     return (
         <div className='container p-5 pt-0'>
             <div className='col-md-6 mx-auto p-5 shadow rounded-10 bg-light'>
-                <h2 className="text-center">Add Your Reviwe</h2>
+                <h2 className="text-center">Give Your Reviwe</h2>
                 <form>
                     <div className='mb-2 mt-2'>
                         <label htmlFor='name'>Name</label>

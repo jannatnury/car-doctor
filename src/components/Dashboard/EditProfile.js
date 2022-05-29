@@ -52,7 +52,7 @@ const EditProfile = () => {
                         </div>
                     </div>
                     <button type='submit' className='btn btn-dark d-block w-100'>
-                        Add Review
+                       Edit Profile
                     </button>
 
                 </form>

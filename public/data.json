@@ -4,7 +4,7 @@
         "model":"NKS123WS",
         "img": "https://i.ibb.co/SrWg1hC/wheels.jpg",
         "supplier": "Jhon Milton",
-        "price": "$16",
+        "price": "16",
         "quantity": 215357,
         "details": "We make 50 models weels in our factory. "
     },
@@ -13,7 +13,7 @@
         "model":"NKS543WS",
         "img": "https://i.ibb.co/6Jjb0Ck/license-plate.jpg",
         "supplier": "Jannat Nury",
-        "price": "$16",
+        "price": "16",
         "quantity": 345357,
         "details": "This our best selling license plate."
     },
@@ -22,7 +22,7 @@
         "model":"KKS123WS",
         "img": "https://i.ibb.co/Hxg6BLB/turn-signal.jpg",
         "supplier": "Ahil Anan",
-        "price": "$16",
+        "price": "16",
         "quantity": 422357,
         "details": "This is the clasic style turn signal."
     },
@@ -31,7 +31,7 @@
         "model":"MNS123WS",
         "img": "https://i.ibb.co/VThxZZL/grilles.png",
         "supplier": "Orthi Sen",
-        "price": "$16",
+        "price": "16",
         "quantity": 334357,
         "details": "This grilles it usable over 10 models car"
     },
@@ -40,7 +40,7 @@
         "model":"AZS123WS",
         "img": "https://i.ibb.co/qWM3r6m/fenders.jpg",
         "supplier": "Ria Ray",
-        "price": "$16",
+        "price": "16",
         "quantity": 123357,
         "details": "This ic common fender for all cars."
     },
@@ -49,7 +49,7 @@
         "model":"FTS123WS",
         "img": "https://i.ibb.co/RQ9043d/light-tail.jpg",
         "supplier": "Markiee",
-        "price": "$16",
+        "price": "16",
         "quantity": 837357,
         "details": "This is classic styles tail light."
     },
@@ -58,7 +58,7 @@
         "model":"HT123WS",
         "img": "https://i.ibb.co/cgp7dSK/car-ac-condenser.jpg",
         "supplier": "Anna Maria",
-        "price": "$16",
+        "price": "16",
         "quantity": 334357,
         "details": "This condencer is best for classic cars."
     },
@@ -67,7 +67,7 @@
         "model":"DW123WS",
         "img": "https://i.ibb.co/F3v9GDF/hood.jpg",
         "supplier": "Jhon Milton",
-        "price": "$16",
+        "price": "16",
         "quantity": 233357,
         "details": "We are making 100+ styes hoods."
     },
@@ -76,7 +76,7 @@
         "model":"UKS123WS",
         "img": "https://i.ibb.co/6JvBsPp/radiator-support.jpg",
         "supplier": "Nury Jannat",
-        "price": "$16",
+        "price": "16",
         "quantity": 54357,
         "details": "This is our one of the best products."
     }

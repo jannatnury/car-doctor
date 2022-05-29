@@ -121,6 +121,9 @@ a {
   justify-content: center;
   align-items: center;
 }
+#profile{
+  border-radius: 50%;
+}
 
 /* Summary Styles */
 #summary {

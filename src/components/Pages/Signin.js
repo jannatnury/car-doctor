@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { toast } from 'react-toastify';
-import auth from '../../firebase.init';
 import googleIcon from '../../assets/icons/google.svg';
+import generateToken from '../../Hooks/useJwt';
+import { auth } from '../../firebase.init';
 
 const Signin = () => {
     const [userInfo, setUserInfo] = useState({
@@ -16,9 +17,14 @@ const Signin = () => {
         general: "",
     })
 
-    const [signInWithEmail, user, loading, hookError] = useSignInWithEmailAndPassword(auth);
+    const [signInWithEmailAndPassword, user, loading, hookError] = useSignInWithEmailAndPassword(auth);
     const [signInWithGoogle, googleUser, loading2, googleError] = useSignInWithGoogle(auth);
 
+    generateToken(user || googleUser?.user);
+    console.log(googleUser)
+
+    // console.log(googleUser);
+    
     const handleEmailChange = (event) => {
         const emailRegex = /\S+@\S+\.\S+/;
         const validEmail = emailRegex.test(event.target.value);
@@ -43,7 +49,10 @@ const Signin = () => {
         event.preventDefault();
         console.log(userInfo);
 
-        signInWithEmail(userInfo.email, userInfo.password);
+        // signInWithEmailAndPassword(userInfo.email, userInfo.password);
+        const email = userInfo.email;
+        const password = userInfo.password;
+        signInWithEmailAndPassword(email, password)
 
     }
     const handleGoogle = () => {
@@ -83,7 +92,7 @@ const Signin = () => {
         <div className='container p-5 pt-0'>
             <div className='col-md-6 mx-auto p-5 shadow m-5 rounded-10 bg-light'>
                 <h2 className="text-center">Sign In to Your Profile</h2>
-                <form onSubmit={handleSignin}>
+                <form>
                     <div className='mb-2 mt-2'>
                         <label htmlFor='email'>Email</label>
                         <div className=''>
@@ -104,7 +113,7 @@ const Signin = () => {
                     <div>
                         <p onClick={resetPassword} className="btn bg-white border-0 ps-0 text-primary"><span className='text-red-400'>Forgot Password ? </span></p>
                     </div>
-                    <button type='submit' className='btn btn-dark d-block w-100'>
+                    <button type='submit' onClick={handleSignin} className='btn btn-dark d-block w-100'>
                         Sign In
                     </button>
                 
