@@ -11,6 +11,7 @@ import Summary from '../Pages/Summary';
 
 
 const Home = () => {
+    
     const [products, setProducts] = useState([]);
 
     useEffect(() => {

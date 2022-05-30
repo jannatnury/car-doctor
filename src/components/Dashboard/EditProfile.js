@@ -1,10 +1,12 @@
 import axios from 'axios';
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom';
 import { auth } from '../../firebase.init';
 
 const EditProfile = () => {
     const [user, loading] = useAuthState(auth);
+    const navigate = useNavigate();
     const handleSubmit = e =>{
         e.preventDefault()
         const updateData = {
@@ -18,7 +20,10 @@ const EditProfile = () => {
 
         }
         axios.put(`https://agile-wildwood-78476.herokuapp.com/api/users/profile`,{updateData})
-                .then(res => res.json())
+                .then(res => 
+                    {
+                        navigate('/dashboard');
+                    })
     }
     return (
         <div className='container p-5 pt-0'>
