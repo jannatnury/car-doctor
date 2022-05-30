@@ -12,6 +12,8 @@ const EditProfile = () => {
             phone:e.target.phone.value,
             education:e.target.education.value,
             location:e.target.location.value,
+            description:e.target.description.value,
+            bio:e.target.bio.value,
             github:e.target.github.value
 
         }
@@ -56,6 +58,20 @@ const EditProfile = () => {
                         <div>
                             <input className="form-control" type='text' name='education'
                                 id='education' placeholder='Add educational history' required />
+                        </div>
+                    </div>
+                    <div className='mb-2 mt-2'>
+                        <label htmlFor='bio'>Bio</label>
+                        <div>
+                            <input className="form-control" type='text' name='bio'
+                                id='bio' placeholder='Add bio' required />
+                        </div>
+                    </div>
+                    <div className='mb-2 mt-2'>
+                        <label htmlFor='description'>Description</label>
+                        <div>
+                            <input className="form-control" type='text' name='description'
+                                id='description' placeholder='Add description' required />
                         </div>
                     </div>
                     <div className='mb-2'>
