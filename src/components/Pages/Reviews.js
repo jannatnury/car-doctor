@@ -11,7 +11,7 @@ const Reviews = () => {
                 <div className='review d-flex align-items-center justify-content-center p-3 pb-4'>
                     <img src={image} alt="customer-img" />
                     <div className='ms-3'>
-                        <h4>Jhon Abraham</h4>
+                        <h4>Asad Milton</h4>
                         <p>Your services are too good.Afortable and 100% original parts.Trusted shop.I also love free home delivery :p</p>
                     </div>
                 </div>

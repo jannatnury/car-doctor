@@ -8,13 +8,13 @@ import { auth } from '../../firebase.init';
 const DynamicParts = () => {
     const [user] = useAuthState(auth)
     const { id } = useParams();
-    const { data: product,isLoading, refetch } = useQuery(['manageProducts',id], () => fetch(`https://agile-wildwood-78476.herokuapp.com/api/products/${id}`).then(res => res.json()));
+    const { data: product,isLoading, refetch } = useQuery(['manageProducts',id], () => fetch(`http://localhost:5000/api/products/${id}`).then(res => res.json()));
 
     if(isLoading){
         return <h1>isLoading</h1>
     }
     const { name, img, details, supplier, price, quantity,model } = product;
-    // console.log(product);
+    console.log(product);
 
     const handleStock = (e) => {
         e.preventDefault();
@@ -28,7 +28,7 @@ const DynamicParts = () => {
             price:price,     
         }
         console.log(order);
-        const url = `https://agile-wildwood-78476.herokuapp.com/api/order`;
+        const url = `http://localhost:5000/api/order`;
         fetch(url, {
             method: 'POST',
             headers: {
@@ -46,7 +46,7 @@ const DynamicParts = () => {
         <div className='row container ms-auto my-5 m-auto d-flex align-items-center'>
            
             <div className="col-12 col-lg-6">
-                <img src="" alt="" />
+                <img className='img-fluid me-4' src={img} alt="" />
             </div>
             <div className="col-12 col-lg-6 shadow p-4">
                 <h2>Name:{name}</h2>

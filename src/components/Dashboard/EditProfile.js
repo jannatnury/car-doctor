@@ -1,29 +1,46 @@
+import axios from 'axios';
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { auth } from '../../firebase.init';
 
 const EditProfile = () => {
+    const [user, loading] = useAuthState(auth);
+    const handleSubmit = e =>{
+        e.preventDefault()
+        const updateData = {
+            email:user.email,
+            phone:e.target.phone.value,
+            education:e.target.education.value,
+            location:e.target.location.value,
+            github:e.target.github.value
+
+        }
+        axios.put(`http://localhost:5000/api/users/profile`,{updateData})
+                .then(res => res.json())
+    }
     return (
         <div className='container p-5 pt-0'>
             <div className='col-md-6 mx-auto p-5 shadow rounded-10 bg-light'>
                 <h2 className="text-center">Edit Your Profile</h2>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <div className='mb-2 mt-2'>
                         <label htmlFor='name'>Full Name</label>
                         <div>
                             <input className="form-control" type='text' name='name'
-                                id='name' placeholder='Jannat Nury' required />
+                                id='name' disabled placeholder={`${user?.displayName}`} />
                         </div>
                     </div>
                     <div className='mb-2 mt-2'>
                         <label htmlFor='email'>Email Address</label>
                         <div>
                             <input className="form-control" type='text' name='email'
-                                id='email' placeholder='jannatnury253@gmail.com' required />
+                                id='email' disabled placeholder={`${user?.email}`} />
                         </div>
                     </div>
                     <div className='mb-2 mt-2'>
                         <label htmlFor='number'>Phone Number</label>
                         <div>
-                            <input className="form-control" type='text' name='number'
+                            <input className="form-control" type='text' name='phone'
                                 id='number' placeholder='+88023456789' required />
                         </div>
                     </div>
@@ -46,7 +63,7 @@ const EditProfile = () => {
                         <div>
                             <input className="form-control"
                                 type='star'
-                                name='link'
+                                name='github'
                                 id='link' placeholder='Add github profile link' required
                             />
                         </div>

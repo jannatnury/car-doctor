@@ -2,7 +2,7 @@ const generateToken = async (user) => {
     const email = user?.email;
     console.log(user);
     if (email) {
-        const url = `https://agile-wildwood-78476.herokuapp.com/api/login`
+        const url = `http://localhost:5000/api/login`
         fetch(url, {
             method: "PUT",
             headers: {

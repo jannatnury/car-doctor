@@ -11,7 +11,7 @@ const AddProduct = () => {
         const price = e.target.price.value;
         const supplier = e.target.supplier.value;
         const details = e.target.details.value;
-        const url = 'https://agile-wildwood-78476.herokuapp.com/api/products/';
+        const url = 'http://localhost:5000/api/products/';
 
         console.log(name, image, price, supplier, quantity);
         // fetch format

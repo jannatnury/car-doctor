@@ -1,6 +1,8 @@
 import React from 'react';
 
 const Profile = () => {
+
+    
     return (
         <div className='row d-flex align-items-center'>
             <div className="col-12 col-lg-6">

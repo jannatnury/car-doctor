@@ -21,7 +21,7 @@ import ManageOrder from './components/Dashboard/ManageOrder';
 import ManageUsers from './components/Dashboard/ManageUsers';
 import DynamicParts from './components/Pages/DynamicParts';
 import ManageProduct from './components/Dashboard/ManageProduct';
-
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -34,6 +34,7 @@ function App() {
         <Route path="/sign-up" element={<SignUp></SignUp>}></Route>
         <Route path="/products" element={<Services></Services>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
+        <Route path="/portfolio" element={<Portfolio></Portfolio>}></Route>
         <Route path="/parts/:id" element={
           <RequireAuth>
             <DynamicParts></DynamicParts>
