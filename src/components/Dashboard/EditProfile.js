@@ -17,7 +17,7 @@ const EditProfile = () => {
             github:e.target.github.value
 
         }
-        axios.put(`http://localhost:5000/api/users/profile`,{updateData})
+        axios.put(`https://agile-wildwood-78476.herokuapp.com/api/users/profile`,{updateData})
                 .then(res => res.json())
     }
     return (

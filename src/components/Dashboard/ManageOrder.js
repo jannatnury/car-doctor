@@ -5,7 +5,7 @@ import { auth } from '../../firebase.init';
 
 const ManageOrder = () => {
     const [user, loading] = useAuthState(auth)
-    const { data: orders,isLoading, refetch } = useQuery(['manageOrders'], () => fetch(`http://localhost:5000/api/orders?email=${user?.email}`).then(res => res.json()));
+    const { data: orders,isLoading, refetch } = useQuery(['manageOrders'], () => fetch(`https://agile-wildwood-78476.herokuapp.com/api/orders?email=${user?.email}`).then(res => res.json()));
     if(loading, isLoading){
         return <h1 className='my-5'>Loading</h1>
     }

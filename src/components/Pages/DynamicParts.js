@@ -8,7 +8,7 @@ import { auth } from '../../firebase.init';
 const DynamicParts = () => {
     const [user] = useAuthState(auth)
     const { id } = useParams();
-    const { data: product,isLoading, refetch } = useQuery(['manageProducts',id], () => fetch(`http://localhost:5000/api/products/${id}`).then(res => res.json()));
+    const { data: product,isLoading, refetch } = useQuery(['manageProducts',id], () => fetch(`https://agile-wildwood-78476.herokuapp.com/api/products/${id}`).then(res => res.json()));
 
     if(isLoading){
         return <h1>isLoading</h1>
@@ -28,7 +28,7 @@ const DynamicParts = () => {
             price:price,     
         }
         console.log(order);
-        const url = `http://localhost:5000/api/order`;
+        const url = `https://agile-wildwood-78476.herokuapp.com/api/order`;
         fetch(url, {
             method: 'POST',
             headers: {

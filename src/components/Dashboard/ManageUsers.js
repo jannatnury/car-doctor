@@ -2,7 +2,7 @@ import React from 'react';
 import { useQuery } from 'react-query';
 
 const ManageUsers = () => {
-    const { data: users,isLoading, refetch } = useQuery(['manageUsers'], () => fetch(`http://localhost:5000/api/users`).then(res => res.json()));
+    const { data: users,isLoading, refetch } = useQuery(['manageUsers'], () => fetch(`https://agile-wildwood-78476.herokuapp.com/api/users`).then(res => res.json()));
 
     return (
         <table class="table">

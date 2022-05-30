@@ -2,7 +2,7 @@ import React from 'react';
 import { useQuery } from 'react-query';
 
 const MyOrder = () => {
-    const { data: orders, isLoading, refetch } = useQuery(['manageOrders'], () => fetch(`http://localhost:5000/api/orders`).then(res => res.json()));
+    const { data: orders, isLoading, refetch } = useQuery(['manageOrders'], () => fetch(`https://agile-wildwood-78476.herokuapp.com/api/orders`).then(res => res.json()));
  console.log(orders);
     return (
         <div className=''>

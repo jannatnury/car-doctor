@@ -7,7 +7,7 @@ const Profile = () => {
 
     const [user,loading]=useAuthState(auth);
     
-    const { data:profileData,isLoading } = useQuery(['profileData'], () => fetch(`http://localhost:5000/api/users/profile/${user.email}`).then(res => res.json()));
+    const { data:profileData,isLoading } = useQuery(['profileData'], () => fetch(`https://agile-wildwood-78476.herokuapp.com/api/users/profile/${user.email}`).then(res => res.json()));
     console.log(profileData);
 
         if(isLoading || loading){

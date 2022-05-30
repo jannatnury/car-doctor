@@ -3,13 +3,13 @@ import React, { useEffect, useState } from 'react';
 import { useQuery } from 'react-query';
 
 const ManageProduct = () => {
-    const { data: products,id, isLoading, refetch } = useQuery(['manageProducts'], () => fetch(`http://localhost:5000/products/`).then(res => res.json()));
+    const { data: products,id, isLoading, refetch } = useQuery(['manageProducts'], () => fetch(`https://agile-wildwood-78476.herokuapp.com/products/`).then(res => res.json()));
     console.log(products);
 
     // ------------
     const [product, setProduct] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/api/products')
+        fetch('https://agile-wildwood-78476.herokuapp.com/api/products')
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [])
@@ -17,7 +17,7 @@ const ManageProduct = () => {
         console.log(id);
         const confirm = window.confirm('Areyou want to delete');
         if (confirm) {
-            axios.delete(`http://localhost:5000/api/products/${id}`)
+            axios.delete(`https://agile-wildwood-78476.herokuapp.com/api/products/${id}`)
                 .then(res => {
                     if (res.data.deletedCount) {
                         alert("Product Is Deleted Successfully!!");

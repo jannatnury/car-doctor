@@ -1,29 +1,15 @@
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import brandLogo from '../../assets/icons/iconc.ico';
 import { auth } from '../../firebase.init';
 
 const Navbar = () => {
 
-    const [user, setUser] = useState({});
-
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, (user) => {
-            if (user) {
-                setUser(user);
-            } else {
-                setUser({});
-            }
+    const [user,loading]=useAuthState(auth);
 
 
-            setLoading(false);
-        });
-        return () => unsubscribe;
-    }, []);
-    console.log(user);
     const handleSignOut = () => {
         signOut(auth).then(() => {
             // Sign-out successful.
@@ -48,9 +34,9 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li className="nav-item me-4 btn p-0">
-                            <span className="nav-link text-white">
+                            <span className="nav-link">
                                 {
-                                    user?.email && (<span>{user?.displayName?.slice(0, user?.displayName?.indexOf(" "))},</span>)
+                                    user?.email && (<span>{user?.displayName}</span>)
                                 }
                             </span>
                         </li>
